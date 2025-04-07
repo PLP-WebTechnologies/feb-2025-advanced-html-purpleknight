@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced HTML5 Elements & Forms</title>
+    </head>
+
+    <body>
+        <!--Add an ordered list with roman numerals-->
+        <h2>Ordered List</h2>
+        <ol type="i"> Kenyan Presidents:
+            <li>Jomo Kenyatta</li>
+            <li>Daniel Arap Moi</li>
+            <li>Mwai Kibaki</li>
+            <li>Uhuru Kenyatta</li>
+            <li>William Kipchirchir</li>
+        </ol>
+        <br><br>
+        <!--Add an external image from pexels.com-->
+        <h2>Image</h2>
+        <img src="kairetu.jpg" alt="Kenyan Beauty">
+        <br><br>
+        <!--Add a table of 5 contacts with name, address, mobile andd email-->
+        <h2>Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Kimathi</td>
+                    <td>Nairobi, Kenya</td>
+                    <td>+254711111111</td>
+                    <td>johnkimathi@email.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Kairetu</td>
+                    <td>Nyeri, Kenya</td>
+                    <td>+254722222222</td>
+                    <td>janekairetu@email.com</td>
+                </tr>
+                <tr>
+                    <td>William Ruto</td>
+                    <td>Eldoret, Kenya</td>
+                    <td>+254733333333</td>
+                    <td>williamkasongo@email.com</td>
+                </tr>
+                <tr>
+                    <td>Julia Achieng</td>
+                    <td>Kisumu, Kenya</td>
+                    <td>+254744444444</td>
+                    <td>juliaachieng@email.com</td>
+                </tr>
+                <tr>
+                    <td>Congestina Juma</td>
+                    <td>Mombasa, Kenya</td>
+                    <td>+254755555555</td>
+                    <td>congestinajuma@email.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <!--Add a registration form-->
+        <h2>Registration Form</h2>
+        <form>
+            <!--Enter First Name-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required placeholder="Enter your first Name">
+            <br><br>
+            <!-- Enter Last Name -->
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required placeholder="Enter your last name">
+            <br><br>
+            <!-- Select Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <br><br>
+            <!-- Enter Email Address -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <!-- Enter the Date -->
+            <label for="date">Enter Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+    
+            <!-- Dropdown Menu -->
+            <label for="skills">Select Skillset:</label>
+            <select id="skills" name="skills" required>
+                <option value="" disabled selected>Choose your skillset</option>
+                <option value="ux">UX Design</option>
+                <option value="web">Web Development</option>
+                <option value="front">Front End Engineering</option>
+                <option value="backend">Back End Engineering</option>
+                <option value="full">Full Stack Engineering</option>
+            </select>
+            <br><br>
+    
+
+    
+            <!-- Checkboxes -->
+            <label>Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="travel" name="interests" value="Travel">
+            <label for="travel">Travel</label>
+            <br><br>
+    
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>
